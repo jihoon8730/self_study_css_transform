@@ -1,0 +1,62 @@
+/* 흔들버튼 */
+.btn {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: royalblue;
+  color: wheat;
+  font-weight: bold;
+}
+
+.btn:hover {
+  animation-name: shki;
+  animation-duration: 0.5s;
+}
+
+@keyframes shki {
+  0% {
+    transform: rotate(-0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* 십자가 회전~! */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.cross {
+  font-size: 100px;
+  width: 70px;
+  margin: auto;
+}
+
+.cross:hover {
+  animation-name: cross;
+  animation-duration: 1s;
+}
+
+@keyframes cross {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(50deg) scale(2);
+  }
+}
